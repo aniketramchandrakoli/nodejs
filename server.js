@@ -5,7 +5,7 @@ const send = require("send");
 
 app.use(express.static("public"));
 app.get("/",function(req,res){
-    var content = fs.readFileSync("index.html");
+    var content = "Hello";
      res.send(content.toString());
 
      res.end();
